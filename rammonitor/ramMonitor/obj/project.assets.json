@@ -1,0 +1,404 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Carbon.Data.Protection/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Carbon.Data.Protection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Carbon.Data.Protection.dll": {}
+        }
+      },
+      "Carbon.Packaging/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Protection": "1.5.0",
+          "Carbon.Storage": "3.0.1",
+          "Carbon.Versioning": "2.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Carbon.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Carbon.Packaging.dll": {}
+        }
+      },
+      "Carbon.Storage/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Carbon.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Carbon.Storage.dll": {}
+        }
+      },
+      "Carbon.VersionControl/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Storage": "3.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Carbon.VersionControl.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Carbon.VersionControl.dll": {}
+        }
+      },
+      "Carbon.Versioning/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Carbon.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Carbon.Versioning.dll": {}
+        }
+      },
+      "GitHub/1.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Packaging": "1.50.0",
+          "Carbon.VersionControl": "2.6.0"
+        },
+        "compile": {
+          "lib/net5.0/GitHub.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/GitHub.dll": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.1.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.1.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildMultiTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.1.1",
+          "Microsoft.SourceLink.Common": "1.1.1"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Carbon.Data.Protection/1.5.0": {
+      "sha512": "3/+PcHtuKgBotHII1Dth0SLBhNDvu2oCec0QdlRus/oHyr25BpfyhvV7h84hWP4UQQjmvymQwM0f7jLy0Vr86w==",
+      "type": "package",
+      "path": "carbon.data.protection/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.data.protection.1.5.0.nupkg.sha512",
+        "carbon.data.protection.nuspec",
+        "lib/net5.0/Carbon.Data.Protection.dll",
+        "lib/netstandard2.1/Carbon.Data.Protection.dll"
+      ]
+    },
+    "Carbon.Packaging/1.50.0": {
+      "sha512": "w8QyiBSWSqgpTWmWSYe1jJHPa20i+pd+tPT0qFWvv0gsYuPkBU6zEbH9e6Y1Xr7HdT0SFEF80neWYKy0Y6yODA==",
+      "type": "package",
+      "path": "carbon.packaging/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.packaging.1.50.0.nupkg.sha512",
+        "carbon.packaging.nuspec",
+        "lib/net5.0/Carbon.Packaging.dll",
+        "lib/netstandard2.1/Carbon.Packaging.dll"
+      ]
+    },
+    "Carbon.Storage/3.0.1": {
+      "sha512": "cymUDZ3EOryvSZEG9R8aK1Q42bbmBAoh8NX+mZdXar6AqzbUiw3rC8EmDbleRl/3l+7cpVd/TDFGxZsslfPqpA==",
+      "type": "package",
+      "path": "carbon.storage/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.storage.3.0.1.nupkg.sha512",
+        "carbon.storage.nuspec",
+        "lib/net5.0/Carbon.Storage.dll",
+        "lib/netcoreapp3.1/Carbon.Storage.dll",
+        "lib/netstandard2.0/Carbon.Storage.dll",
+        "lib/netstandard2.1/Carbon.Storage.dll"
+      ]
+    },
+    "Carbon.VersionControl/2.6.0": {
+      "sha512": "oo+oCdcRwrwjn/4I8CwzrDjH+vcTGvr9QPjJp4HFWAba3ahWiZhCWhioumbmBxnetLENGq6w64TC/xSNwecZbg==",
+      "type": "package",
+      "path": "carbon.versioncontrol/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.versioncontrol.2.6.0.nupkg.sha512",
+        "carbon.versioncontrol.nuspec",
+        "lib/net5.0/Carbon.VersionControl.dll",
+        "lib/netstandard2.1/Carbon.VersionControl.dll"
+      ]
+    },
+    "Carbon.Versioning/2.0.1": {
+      "sha512": "sb5wO/BgMAMvUX6gf41h7Qhl5BkbDZbGiZxm8krEq/cNbpnH+kWlo9TJmTk/5XBB+K97xzgpk2VkBedmEl1Ewg==",
+      "type": "package",
+      "path": "carbon.versioning/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.versioning.2.0.1.nupkg.sha512",
+        "carbon.versioning.nuspec",
+        "lib/net5.0/Carbon.Versioning.dll",
+        "lib/netstandard2.0/Carbon.Versioning.dll"
+      ]
+    },
+    "GitHub/1.34.0": {
+      "sha512": "X+Rn0rMMBdxlaFIL/cZAowKcnU29/oNZ9c3p61yvgJ962LmFUjlF7c2rtqbWMmOjoWxWfdoGygc2EwIPSDUQng==",
+      "type": "package",
+      "path": "github/1.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "github.1.34.0.nupkg.sha512",
+        "github.nuspec",
+        "lib/net5.0/GitHub.dll",
+        "lib/netstandard2.1/GitHub.dll"
+      ]
+    },
+    "Microsoft.Build.Tasks.Git/1.1.1": {
+      "sha512": "AT3HlgTjsqHnWpBHSNeR0KxbLZD7bztlZVj7I8vgeYG9SYqbeFGh0TM/KVtC6fg53nrWHl3VfZFvb5BiQFcY6Q==",
+      "type": "package",
+      "path": "microsoft.build.tasks.git/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.Build.Tasks.Git.props",
+        "build/Microsoft.Build.Tasks.Git.targets",
+        "buildMultiTargeting/Microsoft.Build.Tasks.Git.props",
+        "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets",
+        "microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+        "microsoft.build.tasks.git.nuspec",
+        "tools/core/Microsoft.Build.Tasks.Git.dll",
+        "tools/core/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/Microsoft.Build.Tasks.Git.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll"
+      ]
+    },
+    "Microsoft.SourceLink.Common/1.1.1": {
+      "sha512": "WMcGpWKrmJmzrNeuaEb23bEMnbtR/vLmvZtkAP5qWu7vQsY59GqfRJd65sFpBszbd2k/bQ8cs8eWawQKAabkVg==",
+      "type": "package",
+      "path": "microsoft.sourcelink.common/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/InitializeSourceControlInformation.targets",
+        "build/Microsoft.SourceLink.Common.props",
+        "build/Microsoft.SourceLink.Common.targets",
+        "buildMultiTargeting/Microsoft.SourceLink.Common.props",
+        "buildMultiTargeting/Microsoft.SourceLink.Common.targets",
+        "microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+        "microsoft.sourcelink.common.nuspec",
+        "tools/core/Microsoft.SourceLink.Common.dll",
+        "tools/core/cs/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/de/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/es/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/fr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/it/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ja/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ko/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/pl/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/pt-BR/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ru/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/tr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/zh-Hant/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/Microsoft.SourceLink.Common.dll",
+        "tools/net472/cs/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/de/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/es/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/fr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/it/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ja/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ko/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/pl/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/pt-BR/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ru/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/tr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.SourceLink.Common.resources.dll"
+      ]
+    },
+    "Microsoft.SourceLink.GitHub/1.1.1": {
+      "sha512": "IaJGnOv/M7UQjRJks7B6p7pbPnOwisYGOIzqCz5ilGFTApZ3ktOR+6zJ12ZRPInulBmdAf1SrGdDG2MU8g6XTw==",
+      "type": "package",
+      "path": "microsoft.sourcelink.github/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.SourceLink.GitHub.props",
+        "build/Microsoft.SourceLink.GitHub.targets",
+        "buildMultiTargeting/Microsoft.SourceLink.GitHub.props",
+        "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets",
+        "microsoft.sourcelink.github.1.1.1.nupkg.sha512",
+        "microsoft.sourcelink.github.nuspec",
+        "tools/core/Microsoft.SourceLink.GitHub.dll",
+        "tools/core/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/Microsoft.SourceLink.GitHub.dll",
+        "tools/net472/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "GitHub >= 1.34.0",
+      "Microsoft.SourceLink.GitHub >= 1.1.1"
+    ]
+  },
+  "packageFolders": {
+    "/Users/muratkarasah/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/muratkarasah/Projects/rammonitor/ramMonitor/ramMonitor.csproj",
+      "projectName": "ramMonitor",
+      "projectPath": "/Users/muratkarasah/Projects/rammonitor/ramMonitor/ramMonitor.csproj",
+      "packagesPath": "/Users/muratkarasah/.nuget/packages/",
+      "outputPath": "/Users/muratkarasah/Projects/rammonitor/ramMonitor/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/muratkarasah/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "GitHub": {
+            "target": "Package",
+            "version": "[1.34.0, )"
+          },
+          "Microsoft.SourceLink.GitHub": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
